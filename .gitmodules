@@ -1,0 +1,3 @@
+[submodule "view/mustache"]
+	path = view/mustache
+	url = git@github.com:shairez/mustache-javascriptmvc.git
