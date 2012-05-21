@@ -1,3 +1,5 @@
 .tmp*
 dist
 *.swp
+.project
+.settings/
