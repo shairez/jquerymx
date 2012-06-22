@@ -567,9 +567,13 @@ steal('jquery/model').then(function( $ ) {
 		findAll: function( params, success, error ) {
 			var self = this;
 			this.model().findAll(params, function( items ) {
-				self.push(items);
+				self.push(self.preFilter(items));
 				success && success(self)
 			}, error)
+		},
+		
+		preFilter: function(items){
+			return items;
 		},
 		/**
 		 * Destroys all items in this list.  This will use the List's 
